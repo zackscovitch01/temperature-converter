@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Default Starter</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Karla&family=Spectral&display=swap");
+    </style>
+    <!-- normalize -->
+    <link rel="stylesheet" href="./normalize.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <div class="form">
+      <h1>Temperature conversion</h1>
+      <input type="number" id="textBox" value="0" /> <br />
+      <input type="radio" id="toFahrenheit" name="unit" />
+      <label for="toFahrenheit"> Celsius to Fahrenheit</label>
+      <br />
+      <input type="radio" id="toCelsius" name="unit" />
+      <label for="toClesius"> Fahrenheit to Celsius</label>
+      <br />
+      <button class="btn" type="button" id="submitBtn" onclick="convert()">
+        submit
+      </button>
+      <p id="response">Select a unit</p>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
